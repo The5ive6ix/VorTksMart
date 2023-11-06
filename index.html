@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VorTeksMart</title>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
+    <title>VorTeksMart</title>
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -15,7 +17,7 @@
 </head>
 <body>
     <!----header---->
-    <header>
+    <header id="main-header">
     <a href="#" class="logo">VorTeksMart</a>
 
 <ul class="navlist">
@@ -29,7 +31,6 @@
 <div class="header-icon">
     <a href="#"><i class='bx bx-shopping-bag'></i></a>
     <div class="bx bx-menu" id="menu-icon"></div>
-</div>
 
     </header>
     <div class="wrapper">
@@ -47,6 +48,8 @@
     </div>
 
     <!----home---->
+    <div class="hidden">
+        <div class="show">
     <section class="home" id="home">
         <div class="home-text">
     <h1>New <br><span>Arrivals</span></h1>
@@ -54,7 +57,8 @@
     <a href="#" class="btn">View Products</a>
         </div>
     </section>
-
+</div>
+</div>
     <!----featured---->
     <section class="featured" id="featured">
         <div class="center-text">
@@ -66,99 +70,284 @@
                 <img src="/img/DIscordfeatured.png.png">
                 <div class="fea-text">
                     <h5>Discord</h5>
-                    <p>instocked</p>
+                    <p>In stock</p>
                 </div>
                 <div class="arrow">
-                 <a href="#"><i class='bx bxs-chevron-right'></i></a>
+                 <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
                 </div>
+        </div>
+
+        <div class="row">
+            <img src="/img/facebookfeatured.png.png">
+            <div class="fea-text">
+                <h5>Facebook</h5>
+                <p>In stock</p>
             </div>
+            <div class="arrow">
+             <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+            </div>
+    </div>
 
 
-            <div class="row">
-                <img src="/img/spotifyfeatured.png.png">
-                <div class="fea-text">
-                    <h5>Spotify</h5>
-                    <p>instocked</p>
-                </div>
-                <div class="arrow">
-                 <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                </div>
+    <div class="row">
+        <img src="/img/instagramfeatured.png.png">
+        <div class="fea-text">
+            <h5>Instagram</h5>
+            <p>In stock</p>
+        </div>
+        <div class="arrow">
+         <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+        </div>
+</div>
 
 
-                <div class="row">
-                    <img src="/img/facebookfeatured.png.png">
-                    <div class="fea-text">
-                        <h5>Facebook</h5>
-                        <p>instocked</p>
-                    </div>
-                    <div class="arrow">
-                     <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                    </div>
+<div class="row">
+    <img src="/img/twitterfeatured.png.png">
+    <div class="fea-text">
+        <h5>Twitter</h5>
+        <p>In stock</p>
+    </div>
+    <div class="arrow">
+     <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+    </div>
+</div>
 
 
-                    <div class="row">
-                        <img src="/img/netflixfeatured.png.png">
-                        <div class="fea-text">
-                            <h5>Netflix</h5>
-                            <p>instocked</p>
-                        </div>
-                        <div class="arrow">
-                         <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                        </div>
+<div class="row">
+    <img src="/img/netflixfeatured.png.png">
+    <div class="fea-text">
+        <h5>Netflix</h5>
+        <p>In stock</p>
+    </div>
+    <div class="arrow">
+     <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+    </div>
+</div>
 
-                                <div class="row">
-                                    <img src="/img/valorantfeatured.png.png">
-                                    <div class="fea-text">
-                                        <h5>Valorant</h5>
-                                        <p>instocked</p>
-                                    </div>
-                                    <div class="arrow">
-                                     <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                                    </div>
 
-                                    <div class="row">
-                                        <img src="/img/twitterfeatured.png.png">
-                                        <div class="fea-text">
-                                            <h5>Twitter</h5>
-                                            <p>instocked</p>
-                                        </div>
-                                        <div class="arrow">
-                                         <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                                        </div>
+<div class="row">
+    <img src="/img/spotifyfeatured.png.png">
+    <div class="fea-text">
+        <h5>Spotify</h5>
+        <p>In stock</p>
+    </div>
+    <div class="arrow">
+     <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+    </div>
+</div>
 
-                                        <div class="row">
-                                            <img src="/img/tiktokfeatured.png.png">
-                                            <div class="fea-text">
-                                                <h5>TikTok</h5>
-                                                <p>instocked</p>
-                                            </div>
-                                            <div class="arrow">
-                                             <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                                            </div>
 
-                                            <div class="row">
-                                                <img src="/img/instagramfeatured.png.png">
-                                                <div class="fea-text">
-                                                    <h5>Instagram</h5>
-                                                    <p>instocked</p>
-                                                </div>
-                                                <div class="arrow">
-                                                 <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                                                </div>
+<div class="row">
+    <img src="/img/tiktokfeatured.png.png">
+    <div class="fea-text">
+        <h5>TikTok</h5>
+        <p>In stock</p>
+    </div>
+    <div class="arrow">
+     <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+    </div>
+</div>
 
-                                                <div class="row">
-                                                    <img src="/img/othergamefeatured.png.png">
-                                                    <div class="fea-text">
-                                                        <h5>Other Games</h5>
-                                                        <p>instocked</p>
-                                                    </div>
-                                                    <div class="arrow">
-                                                     <a href="#"><i class='bx bxs-chevron-right'></i></a>
-                                                    </div>
+
+<div class="row">
+    <img src="/img/othergamefeatured.png.png">
+    <div class="fea-text">
+        <h5>Other Games</h5>
+        <p>In stock</p>
+    </div>
+    <div class="arrow">
+     <a href="#"><i class='bx bxs-right-arrow-circle'></i></i></a>
+    </div>
+</div>
+
+        </div>
+    </section>
+</div>
+    <!----cta---->
+    <section class="cta">
+        <div class="cta-text">
+            <h6>👉🏼 Get started today, and let the magic begin! 🎮🌟</h6>
+            <h4>🎁 Get offer on<br>NEW ARRIVAL:</h4>
+            <a href="#" class="btn">Shop Now</a>
         </div>
     </section>
 
+    <!----new---->
+
+<section class="new" id="new">
+  <div class="center-text">
+<h2>New Arrivals</h2>
+  </div>
+
+  <div class="new-content">
+<div class="box2">
+<img src="img/newproxifier.png.png">
+<h5>Proxifier</h5>
+<h6>250৳</h6>
+<div class="sale">
+<h4>Sale</h4>
+</div> 
+</div>
+
+<div class="box2">
+    <img src="img/instagramfeatured.png.png">
+    <h5>Proxifier</h5>
+    <h6>250৳</h6>
+    <div class="sale">
+    <h4>Sale</h4>
+    </div> 
+    </div>
+
+    <div class="box2">
+        <img src="img/newproxifier.png.png">
+        <h5>Proxifier</h5>
+        <h6>250৳</h6>
+        <div class="sale">
+        <h4>Sale</h4>
+        </div> 
+        </div>
+
+        <div class="box2">
+            <img src="img/newproxifier.png.png">
+            <h5>Proxifier</h5>
+            <h6>250৳</h6>
+            <div class="sale">
+            <h4>Sale</h4>
+            </div> 
+            </div>
+
+            <div class="box2">
+                <img src="img/newproxifier.png.png">
+                <h5>Proxifier</h5>
+                <h6>250৳</h6>
+                <div class="sale">
+                <h4>Sale</h4>
+                </div> 
+                </div>
+
+                <div class="box2">
+                    <img src="img/newproxifier.png.png">
+                    <h5>Proxifier</h5>
+                    <h6>250৳</h6>
+                    <div class="sale">
+                    <h4>Sale</h4>
+                    </div> 
+                    </div>
+
+
+                    <div class="box2">
+                        <img src="img/newproxifier.png.png">
+                        <h5>Proxifier</h5>
+                        <h6>250৳</h6>
+                        <div class="sale">
+                        <h4>Sale</h4>
+                        </div> 
+                        </div>
+
+                        <div class="box2">
+                            <img src="img/newproxifier.png.png">
+                            <h5>Proxifier</h5>
+                            <h6>250৳</h6>
+                            <div class="sale">
+                            <h4>Sale</h4>
+                            </div> 
+                            </div>
+
+
+                            <div class="box2">
+                                <img src="img/newproxifier.png.png">
+                                <h5>Proxifier</h5>
+                                <h6>250৳</h6>
+                                <div class="sale">
+                                <h4>Sale</h4>
+                                </div> 
+                                </div>
+
+                                <div class="box2">
+                                    <img src="img/newproxifier.png.png">
+                                    <h5>Proxifier</h5>
+                                    <h6>250৳</h6>
+                                    <div class="sale">
+                                    <h4>Sale</h4>
+                                    </div> 
+                                    </div>
+  </div>
+
+</section>
+
+ <!----brand---->
+ <section class="brand">
+    <div class="brand-content">
+<div class="main">
+    <img src="img/meta.png">
+</div>
+
+<div class="main">
+    <img src="img/epic-games-.png">
+</div>
+
+<div class="main">
+    <img src="img/riot.png">
+</div>
+
+<div class="main">
+    <img src="img/X-Corp.-Logo.png">
+</div>
+
+<div class="main">
+    <img src="img/xboxlogo.png">
+</div>
+
+    </div>
+ </section>
+    <!----contact---->
+    <section class="support" id="support">
+<div class="main-contact">
+   <h3>VorTeksMart</h3>
+   <h5>Let's Connect With Us</h5>
+   <div class="icons">
+<a href="#"><i class='bx bxl-facebook-square' ></i></a>
+<a href="#"><i class='bx bxl-instagram' ></i></a>
+<a href="#"><i class='bx bxl-discord' ></i></a>
+   </div>
+   </div>
+
+   <div class="main-contact">
+    <h3>Explore</h3>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#new">New</a></li>
+    <li><a href="#support">Support</a></li>
+    </div>
+
+<div class="main-contact">
+<h3>Our Services</h3>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Free Shipping</a></li>
+<li><a href="#">Gift Cards</a></li>
+</div>
+
+<div class="main-contact">
+<h3>Shopping</h3>
+<li><a href="#">Gamepasses</a></li>
+<li><a href="#">Subscriptions</a></li>
+<li><a href="#">Others</a></li>
+<li><a href="#">Sale</a></li>
+</div>
+    </section>
+
+    <div class="last-text">
+        <p>VorTeks Mart © 2023</p>
+    </div>
+    <!----scroll top---->
+
+<a href="#" class="top"><i class='bx bxs-up-arrow-alt'></i></a>
+
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
     <!----custom js link---->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
